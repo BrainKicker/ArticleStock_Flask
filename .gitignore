@@ -16,7 +16,7 @@
 **/*.sqlite
 
 # Logs
-*.log
+**/*.log
 
 # Application private folder
 /instance/
