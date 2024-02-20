@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4899126-b7de-46b9-b2e5-98474d33ca03" name="Changes" comment="" />
+    <list default="true" id="b4899126-b7de-46b9-b2e5-98474d33ca03" name="Changes" comment=":D">
+      <change beforePath="$USER_HOME$/Проекты/PyCharmProjects/ArticleStock_Flask/.idea/.gitignore" beforeDir="false" afterPath="$USER_HOME$/Проекты/PyCharmProjects/ArticleStock_Flask/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$USER_HOME$/Проекты/PyCharmProjects/ArticleStock_Flask/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/Проекты/PyCharmProjects/ArticleStock_Flask/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +31,14 @@
       </map>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Проекты/PyCharmProjects/ArticleStock_Flask" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2ccfpagEEyYW8y7vBspGv2Pdjik" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -249,12 +256,25 @@
       <updated>1708415970316</updated>
       <workItem from="1708415982731" duration="1409000" />
       <workItem from="1708417397536" duration="46000" />
-      <workItem from="1708417449805" duration="11738000" />
+      <workItem from="1708417449805" duration="12251000" />
     </task>
+    <task id="LOCAL-00001" summary=":D">
+      <option name="closed" value="true" />
+      <created>1708432243380</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708432243380</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":D" />
+    <option name="LAST_COMMIT_MESSAGE" value=":D" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlastTest$FlastTest.coverage" NAME="FlastTest Coverage Results" MODIFIED="1708428909418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Проекты/PyCharmProjects/FlastTest" />
