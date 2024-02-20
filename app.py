@@ -53,7 +53,7 @@ def article_delete(article_id):
 		db.session.commit()
 		return redirect('/articles')
 	except:
-		return "При удалении статьи произошла ошибка"
+		return 'При удалении статьи произошла ошибка'
 
 
 @app.route('/article/<int:article_id>/update', methods=['GET', 'POST'])
@@ -67,7 +67,7 @@ def article_update(article_id):
 			db.session.commit()
 			return redirect('/articles')
 		except:
-			return "При редактировании статьи произошла ошибка"
+			return 'При редактировании статьи произошла ошибка'
 	else:
 		return render_template('update-article.html', article=article)
 
@@ -84,7 +84,7 @@ def create_article():
 			db.session.commit()
 			return redirect('/articles')
 		except:
-			return "При добавлении статьи произошла ошибка"
+			return 'При добавлении статьи произошла ошибка'
 	else:
 		return render_template('create-article.html')
 
