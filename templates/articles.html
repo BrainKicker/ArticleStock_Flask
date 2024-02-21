@@ -5,20 +5,18 @@
 {% endblock %}
 
 {% block main %}
-	<div class="container">
-		<h1>Все статьи на сайте</h1>
+	<h1>Все статьи на сайте</h1>
 
-		{% if articles|length > 0 %}
-			{% for article in articles %}
-				<div class="alert alert-info">
-					<h2>{{ article.title }}</h2>
-					<p>{{ article.intro }}</p>
-					<p><b>Дата: {{ article.date.date() }}</b></p>
-					<a class="btn btn-warning" href="/article/{{ article.id }}">Детальнее</a>
-				</div>
-			{% endfor %}
-		{% else %}
-			<p>У нас ещё нет статей</p>
-		{% endif %}
-	</div>
+	{% if articles|length > 0 %}
+		{% for article in articles %}
+			<div class="alert alert-info">
+				<h2>{{ article.title }}</h2>
+				<p>{{ article.intro }}</p>
+				<p><b>Дата: {{ article.date.date() }}</b></p>
+				<a class="btn btn-warning" href="/article/{{ article.id }}">Детальнее</a>
+			</div>
+		{% endfor %}
+	{% else %}
+		<p>У нас ещё нет статей</p>
+	{% endif %}
 {% endblock %}

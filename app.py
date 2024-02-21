@@ -13,9 +13,19 @@ class Article (db.Model):
 	intro = db.Column(db.String(300), nullable=False)
 	text = db.Column(db.Text, nullable=False)
 	date = db.Column(db.DateTime, default=datetime.utcnow)
+	user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True, default=None)
 
 	def __repr__(self):
 		return '<Article %r>' % self.id
+
+
+class User (db.Model):
+	id = db.Column(db.Integer, primary_key=True)
+	username = db.Column(db.String(), nullable=False)
+	password = db.Column(db.String(), nullable=False)
+
+	def __repr__(self):
+		return '<User %r>' % self.id
 
 
 with app.app_context():
@@ -31,6 +41,28 @@ def index():
 @app.route('/about')
 def about():
 	return render_template('about.html')
+
+
+@app.route('/sign-in', methods=['GET', 'POST'])
+def sign_in():
+	if request.method == 'POST':
+		username = request.form['username']
+		password = request.form['password']
+		# TODO
+		return "TODO"
+	else:
+		return render_template('sign-in.html')
+
+
+@app.route('/sign-up', methods=['GET', 'POST'])
+def sign_up():
+	if request.method == 'POST':
+		username = request.form['username']
+		password = request.form['password']
+		# TODO
+		return "TODO"
+	else:
+		return render_template('sign-up.html')
 
 
 @app.route('/articles')

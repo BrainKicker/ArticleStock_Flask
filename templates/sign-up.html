@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Регистрация
+{% endblock %}
+
+{% block main %}
+	<div class="container" style="width: 50%">
+		<h1>Регистрация</h1>
+		<form method="post">
+			<label for="username" class="label label-default label-info">Имя пользователя:</label>
+			<input type="text" name="username" id="username" class="form-control"/><br/>
+			<label for="password" class="label label-default label-info">Пароль:</label>
+			<input type="password" name="password" id="password" class="form-control"/><br/>
+			<input type="submit" class="btn btn-success" value="Войти"/><br/>
+		</form>
+	</div>
+{% endblock %}
